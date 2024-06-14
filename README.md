@@ -7,6 +7,14 @@ Hello! I'm Inside4ndroid, a passionate Software Developer. I love solving proble
 
 ---
 
+## How To Use
+
+- fork and then clone or just clone up to you.
+- run npm install
+- run npm run getkeys
+
+it will run and generate a keys.json file :)
+
 
 ## Get in Touch
 
