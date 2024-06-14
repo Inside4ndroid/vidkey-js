@@ -1,0 +1,17 @@
+{
+  "name": "vidsrc-keys",
+  "version": "1.0.0",
+  "description": "A vidsrc key ectracttion tool!",
+  "main": "index.mjs",
+  "scripts": {
+    "getkeys": "node index.mjs"
+  },
+  "keywords": [],
+  "author": "Inside4ndoid Studios [massive credit to achraf2003]",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "deobfuscator": "2.4.5",
+    "node-fetch": "^3.3.2",
+    "webcrack": "^2.10.0"
+  }
+}
