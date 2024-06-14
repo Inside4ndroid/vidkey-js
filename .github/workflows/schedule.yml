@@ -1,0 +1,24 @@
+name: Run npm project every 2 hours
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+
+jobs:
+  run-npm-project:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run the project
+      run: npm run getkeys
