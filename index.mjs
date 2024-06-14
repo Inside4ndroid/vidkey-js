@@ -2,6 +2,7 @@ import { webcrack } from "webcrack"
 import { Deobfuscator } from "deobfuscator"
 import fetch from "node-fetch"
 import { assert } from "console"
+import { writeFile } from "node:fs/promises"
 
 async function deobfuscationChain(obfuscatedScript, deobfsSteps) {
     let deobfs = obfuscatedScript

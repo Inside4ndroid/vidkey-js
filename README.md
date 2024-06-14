@@ -7,6 +7,11 @@ Hello! I'm Inside4ndroid, a passionate Software Developer. I love solving proble
 
 ---
 
+# Keys.json
+
+- The keys are updated every 2 hours in this repository using githubs workflows.
+- You can obtain the keys from `https://raw.githubusercontent.com/Inside4ndroid/vidkey-js/main/keys.json`
+
 ## How To Use
 
 - fork and then clone or just clone up to you.
