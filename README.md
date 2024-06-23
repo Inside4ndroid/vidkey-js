@@ -9,7 +9,7 @@ Hello! I'm Inside4ndroid, a passionate Software Developer. I love solving proble
 
 # Keys.json
 
-- The keys are updated every 2 hours in this repository using githubs workflows.
+- The application checks for new keys every 2 hours and will only update keys.json if keys have changed.
 - You can obtain the keys from `https://raw.githubusercontent.com/Inside4ndroid/vidkey-js/main/keys.json`
 
 ## How To Use
