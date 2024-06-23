@@ -2,7 +2,7 @@ name: Run npm project every 2 hours
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   run-npm-project:
@@ -22,10 +22,6 @@ jobs:
 
     - name: Run the project
       run: npm run getkeys
-
-    - name: Ensure keys.json exists and overwrite it
-      run: |
-        echo "[]" > keys.json
 
     - name: Commit changes
       run: |
