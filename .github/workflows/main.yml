@@ -2,7 +2,7 @@ name: Run npm project every 2 hours
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   run-npm-project:
