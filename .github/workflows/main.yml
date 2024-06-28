@@ -1,4 +1,4 @@
-name: Run npm project every 5 minutes
+name: Run npm project every 2 hours
 
 on:
   schedule:
@@ -23,18 +23,12 @@ jobs:
     - name: Run the project
       run: npm run getkeys
 
-    - name: Ensure keys.json exists
-      run: |
-        if [ ! -f keys.json ]; then
-          echo "[]" > keys.json
-        fi
-
     - name: Commit changes
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add keys.json
-        git diff-index --quiet HEAD || git commit -m "Update keys.json"
+        git commit -m "Update keys.json" --allow-empty
 
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
