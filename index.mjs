@@ -80,16 +80,20 @@ async function getDeobfuscatedScript() {
 
 async function run() {
     const vidplayHost = "https://vidplay.online";
+    let scriptUrl = '';
     const headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/120.0",
         "Referer": vidplayHost + "/e/",
         "Origin": vidplayHost
     }
 
-    //const vidplayHtml = await fetch(`${vidplayHost}/e/`, { headers }).then(async (x) => await x.text())
-    //const codeVersion = vidplayHtml.match(/embed.js\?v=(\w+)/)[1]
-    //const scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js?v=${codeVersion}`
-    const scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js`
+    try {
+        const vidplayHtml = await fetch(`${vidplayHost}/e/`, { headers }).then(async (x) => await x.text())
+        const codeVersion = vidplayHtml.match(/embed.js\?v=(\w+)/)[1]
+        scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js?v=${codeVersion}`
+    } catch (e) {
+        scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js`
+    }
 
     obfuscatedScript = await fetch(scriptUrl, { headers }).then(async (x) => await x.text())
 
