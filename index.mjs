@@ -86,9 +86,10 @@ async function run() {
         "Origin": vidplayHost
     }
 
-    const vidplayHtml = await fetch(`${vidplayHost}/e/`, { headers }).then(async (x) => await x.text())
-    const codeVersion = vidplayHtml.match(/embed.js\?v=(\w+)/)[1]
-    const scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js?v=${codeVersion}`
+    //const vidplayHtml = await fetch(`${vidplayHost}/e/`, { headers }).then(async (x) => await x.text())
+    //const codeVersion = vidplayHtml.match(/embed.js\?v=(\w+)/)[1]
+    //const scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js?v=${codeVersion}`
+    const scriptUrl = `${vidplayHost}/assets/mcloud/min/embed.js`
 
     obfuscatedScript = await fetch(scriptUrl, { headers }).then(async (x) => await x.text())
 
