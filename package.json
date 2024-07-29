@@ -10,8 +10,8 @@
   "author": "Inside4ndoid Studios [massive credit to achraf2003]",
   "license": "GPL-3.0-only",
   "dependencies": {
-    "deobfuscator": "2.4.5",
-    "node-fetch": "^3.3.2",
-    "webcrack": "^2.10.0"
+    "puppeteer": "^22.14.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
