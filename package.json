@@ -10,6 +10,8 @@
   "author": "Inside4ndoid Studios [massive credit to achraf2003]",
   "license": "GPL-3.0-only",
   "dependencies": {
+    "@babel/parser": "^7.25.0",
+    "@babel/traverse": "^7.25.1",
     "puppeteer": "^22.14.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
