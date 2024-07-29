@@ -1,5 +1,3 @@
-# [NOT WORKING - NEEDS WORK]
-
 # A Vidsrc Key Extraction Tool!
 
 Hello! I'm Inside4ndroid, a passionate Software Developer. I love solving problems and recently vidsrc has been one of my pet peev's.
